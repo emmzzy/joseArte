@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Jose Agube Arte</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href=""> <img src="images/logos.png" alt="our logo" class="logo"></a>
+
+            <nav>
+                <a href="#" class="hide-desktop">
+                    <img src="images/menu.png" alt="toggle menu" class="menu" id="menu">
+                </a>
+
+                <ul class="show-desktop hide-mobile" id="nav">
+                    <li><img src="images/pic2.jpg" alt="exit menu" id="exit" class="exit-btn hide-desktop"></li>
+                    <li><a href="index.html" target="blank">Home</a></li>
+                    <li><a href="services.html" target="blank">Services</a></li>
+                    <li><a href="about.html" target="blank">About</a></li>
+                    <li><a href="contact.html" target="blank">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+
+
+    <div class="container">
+        <h2>Get your Art now</h2>
+        <a href="#" class="cta">Get Started</a>
+    </div>
+
+    <footer class="footer-container">
+        <div class="container">
+            <a href="#">
+                <img src="images/logos.png" class="logo" alt="logo">
+            </a>
+            <p class="address">Abuja-Nigeria</p>
+            <ul class="footer-links">
+                <li><a href="terms.html" target="blank">Terms of Services</a></li>
+                <li><a href="privacy.html" target="blank">Privacy Policy</a></li>
+
+            </ul>
+        </div>
+    </footer>
+
+    <script>
+        var menu = document.getElementById('menu');
+        var nav = document.getElementById('nav');
+        var exit = document.getElementById('exit');
+        
+        menu.addEventListener('click', function(e) {
+            nav.classList.toggle('hide-mobile');
+            e.preventDefault();
+        });
+        
+        exit.addEventListener('click', function(e) {
+            nav.classList.add('hide-mobile');
+            e.preventDefault();
+        });
+    </script>
+</body>
+</html>
