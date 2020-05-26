@@ -150,6 +150,14 @@ ul.footer-links {
     margin: 0 auto;
 }
 
+.arts {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-weight: bolder;
+    font-size: larger;
+}
+
 ul.footer-links li {
     display: inline-block;
 }
