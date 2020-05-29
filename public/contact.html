@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - José Agube Arte</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        h1{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 30px;
+            text-decoration: underline;
+        }
+
+        h2{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            text-align: center;
+            margin-bottom: 0;
+        }
+        .reserve {
+            text-align: center;
+            text-decoration: none;
+            color: skyblue;
+            font-weight: bolder;
+            margin-top: 20px;
+        }
+
+        .address {
+            text-align: center;
+        }
+
+        .msg {
+            font-size: larger;
+            font-weight: bolder;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="index.html"> <img src="images/logos.png" alt="our logo" class="logo"></a>
+
+            <nav>
+                <a href="#" class="hide-desktop">
+                    <img src="images/menu.png" alt="toggle menu" class="menu" id="menu">
+                </a>
+                <ul class="show-desktop hide-mobile" id="nav">
+                    <li><img src="images/exit.jpg" alt="exit menu" id="exit" class="exit-btn hide-desktop"></li>
+                    <li><a href="index.html" >Home</a></li>
+                    <li><a href="services.html" >Art Service</a></li>
+                    <li><a href="about.html" >About</a></li>
+                    <li><a href="contact.html" >Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+    <div class="container">
+        <h1>Contact: José Agube Arts</h1>
+        <h2>Telephone:</h2>
+        <p style="font-weight: bold;">(234) 815 484 8334</p>
+
+        <h2>Email:</h2>
+        <p style="font-weight: bold;">agubejoseph@gmail.com</p>
+
+        <a href="mailto:agubejoseph@gmail.com?Subject=Reservation" target="blank" class="reserve">Make Reservations</a>
+
+        <h2>Interested:</h2>
+        <p class="msg">Contact José Agube Arts directly through the contact information on this respective page. <br> Thanks.</p>
+
+
+    </div>
+
+
+    <div class="container">
+        <h2>Get your Art now</h2>
+        <a href="mailto:agubejoseph@gmail.com?Subject=Get my art started" class="cta">Get Started</a>
+    </div>
+
+    <footer class="footer-container">
+        <div class="container">
+            <a href="index.html">
+                <img src="images/logos.png" class="logo" alt="logo">
+            </a>
+            <p class="address">Abuja-Nigeria</p>
+            <a href="https://www.facebook.com/JoseAgube"><img src="images/fb.png" alt="Facebook Profile link"></a> <a href="https://wa.me/2348154848334?text=Hello Jose!"><img src="images/what.jpeg" alt="WhatsApp Profile link"></a> <a href="https://www.twitter.com/jose_agube1"><img src="images/twitter.jpeg" alt="Twitter Profile link"></a> <a href="https://www.instagram.com/jose_agube"><img src="images/inst.jpeg" alt="Instagram Profile link"></a> 
+            <ul class="footer-links">
+                <li><a href="terms.html" target="blank">Terms of Services</a></li>
+                <li><a href="privacy.html" target="blank">Privacy Policy</a></li>
+
+            </ul>
+            <p>&copy; José Agube 2020</p>
+        </div>
+    </footer>
+
+    <script>
+        var menu = document.getElementById('menu');
+        var nav = document.getElementById('nav');
+        var exit = document.getElementById('exit');
+        
+        menu.addEventListener('click', function(e) {
+            nav.classList.toggle('hide-mobile');
+            e.preventDefault();
+        });
+        
+        exit.addEventListener('click', function(e) {
+            nav.classList.add('hide-mobile');
+            e.preventDefault();
+        });
+    </script>
+</body>
+</html>

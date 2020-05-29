@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - José Agube Arte</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        h1{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 30px;
+        }
+
+        h2{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            text-align: center;
+        }
+        p{
+            text-align: justify;
+        }
+
+        h3 a { 
+            text-decoration: none;
+        }
+
+        .address {
+            text-align: center;
+        }
+
+        p a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="index.html"> <img src="images/logos.png" alt="our logo" class="logo"></a>
+
+            <nav>
+                <a href="#" class="hide-desktop">
+                    <img src="images/menu.png" alt="toggle menu" class="menu" id="menu">
+                </a>
+                <ul class="show-desktop hide-mobile" id="nav">
+                    <li><img src="images/exit.jpg" alt="exit menu" id="exit" class="exit-btn hide-desktop"></li>
+                    <li><a href="index.html" >Home</a></li>
+                    <li><a href="services.html" >Art Service</a></li>
+                    <li><a href="about.html" >About</a></li>
+                    <li><a href="contact.html" >Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+    <div class="container">
+        <h2>About Us: JoséArtes</h2>
+        <h3 style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">José Agube Is the artist and founder of <a href="index.html"> joseagube.com</a></h3>
+        <h3 style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">A word from our founder</h3>
+        <p>Hi, I’m Joseph S. Agube, popular as José Agube. I started JoséArtes as something I did for leisure. I have been passionate about arts from childhood. I started sketching from primary school, back then I'd sketch anything I found worthy whenever I was bored or high on emotions - joy or anger. Initially I didn't consider going professional at that time. After secondary school education while waiting to be admitted into the university, I started drawing a lot more and I took self-taught classes to improve my skills. While investing in my skills, I was rewarded with better arts which garnered considerable attention from my considerable fan base at that time. This attention spurred me on and since arts is something I'm passionate about, I drew more. After a while of experimenting, I settled into making mostly portraits although occasionally chipping in with full bodied photos. I made portraits of a few famous faces, local and international, of which American hip-hop artist Jermaine Cole (J. Cole) remains my most shared work at the moment.   </p>
+        <p>Now, I make arts professionally. I charge modest prices for my arts, depending on a range of criteria. The prices here are some of the best you'll find on any art website. Welcome to JoséArtes, making Arts is our passion.</p>
+        <h3 style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; text-align: left;" >José Agube</h3>
+    </div>
+
+
+
+    <div class="container">
+        <h2 style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Gift your friends & families an Art now</h2>
+        <a href="mailto:agubejoseph@gmail.com?Subject=Get my art started" class="cta">Get Started</a>
+    </div>
+
+    <footer class="footer-container">
+        <div class="container">
+            <a href="index.html">
+                <img src="images/logos.png" class="logo" alt="logo">
+            </a>
+            <p class="address">Abuja-Nigeria</p>
+            <a href="https://www.facebook.com/JoseAgube"><img src="images/fb.png" alt="Facebook Profile link"></a> <a href="https://wa.me/2348154848334?text=Hello Jose!"><img src="images/what.jpeg" alt="WhatsApp Profile link"></a> <a href="https://www.twitter.com/jose_agube1"><img src="images/twitter.jpeg" alt="Twitter Profile link"></a> <a href="https://www.instagram.com/jose_agube"><img src="images/inst.jpeg" alt="Instagram Profile link"></a> 
+            <ul class="footer-links">
+                <li><a href="terms.html" target="blank">Terms of Services</a></li>
+                <li><a href="privacy.html" target="blank">Privacy Policy</a></li>
+
+            </ul>
+            <p style="text-align: center;">&copy; José Agube 2020</p>
+        </div>
+    </footer>
+
+    <script>
+        var menu = document.getElementById('menu');
+        var nav = document.getElementById('nav');
+        var exit = document.getElementById('exit');
+        
+        menu.addEventListener('click', function(e) {
+            nav.classList.toggle('hide-mobile');
+            e.preventDefault();
+        });
+        
+        exit.addEventListener('click', function(e) {
+            nav.classList.add('hide-mobile');
+            e.preventDefault();
+        });
+    </script>
+
+</body>
+</html>
